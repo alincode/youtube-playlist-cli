@@ -6,7 +6,7 @@
   "scripts": {
     "cli": "node cli.js",
     "reactive": "node reactive.js",
-    "release": "rm -rf package-lock.json && npm version minor"
+    "release": "rm -rf package-lock.json && npm version minor && npm publish"
   },
   "bin": {
     "ymr": "reactive.js",
