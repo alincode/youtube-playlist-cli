@@ -1,0 +1,44 @@
+{
+  "name": "youtube-playlist-markdown-cli",
+  "version": "0.0.0",
+  "description": "Youtube Playlist Markdown CLI",
+  "main": "cli.js",
+  "scripts": {
+    "cli": "node cli.js",
+    "reactive": "node reactive.js"
+  },
+  "bin": {
+    "ymr": "reactive.js",
+    "ym": "cli.js",
+    "release": "rm -rf package-lock.json && npm version minor"
+  },
+  "keywords": [
+    "youtube",
+    "playlist",
+    "markdown",
+    "cli",
+    "commander",
+    "inquirer"
+  ],
+  "author": {
+    "name": "alincode",
+    "email": "alincode@gmail.com",
+    "url": "https://github.com/alincode"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alincode/youtube-playlist-markdown-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alincode/youtube-playlist-markdown-cli/issues"
+  },
+  "homepage": "https://github.com/alincode/youtube-playlist-markdown-cli#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.15.1",
+    "figlet": "^1.2.0",
+    "inquirer": "^5.2.0",
+    "youtube-playlist-markdown": "^1.0.0"
+  }
+}
