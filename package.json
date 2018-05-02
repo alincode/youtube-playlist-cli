@@ -5,12 +5,12 @@
   "main": "cli.js",
   "scripts": {
     "cli": "node cli.js",
-    "reactive": "node reactive.js"
+    "reactive": "node reactive.js",
+    "release": "rm -rf package-lock.json && npm version minor"
   },
   "bin": {
     "ymr": "reactive.js",
-    "ym": "cli.js",
-    "release": "rm -rf package-lock.json && npm version minor"
+    "ym": "cli.js"
   },
   "keywords": [
     "youtube",
