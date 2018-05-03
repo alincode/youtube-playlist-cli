@@ -35,6 +35,9 @@
     "url": "https://github.com/alincode/youtube-playlist-markdown-cli/issues"
   },
   "homepage": "https://github.com/alincode/youtube-playlist-markdown-cli#readme",
+  "engines": {
+    "node": ">= 8"
+  },
   "dependencies": {
     "chalk": "^2.4.1",
     "commander": "^2.15.1",
