@@ -2,9 +2,12 @@
 
 ![GitHub package version](https://img.shields.io/github/package-json/v/alincode/youtube-playlist-markdown-cli.svg)
 [![](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-![node version](https://img.shields.io/node/v/youtube-playlist-markdown-cli.svg)
 
 Youtube Playlist Markdown CLI
+
+### Requirements
+
+* node 8.x.x
 
 ### Usage via CLI
 
