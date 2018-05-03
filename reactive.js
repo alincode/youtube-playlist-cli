@@ -31,7 +31,7 @@ const observe = Rx.Observable.create(function (obs) {
   obs.next({
     type: 'rawlist',
     name: 'typeText',
-    message: 'What thing you want to do?',
+    message: 'What things you like to do?',
     choices: [ 'only show the information', 'generate a playlist', 'generate all playlist']
   });
 
