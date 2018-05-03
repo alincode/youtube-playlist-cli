@@ -19,9 +19,15 @@ you need to get your API key, if you don't know how to do, maybe this video coul
 
 [How to Get YouTube API Key - Easy way - YouTube](https://www.youtube.com/watch?v=_U_VS12uu-o)
 
+##### Mac
+
 ```
 export GOOOGLE_API_KEY="========== YOUR GOOGLE API KEY =========="
 ```
+
+##### Windows
+
+* [How To Edit System Environment Variables In Windows 10 - YouTube](https://www.youtube.com/watch?v=C-U9SGaNbwY)
 
 #### command mode
 
