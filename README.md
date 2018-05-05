@@ -1,7 +1,7 @@
 # Youtube Playlist Markdown CLI
 
 ![GitHub package version](https://img.shields.io/github/package-json/v/alincode/youtube-playlist-markdown-cli.svg)
-[![](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+![npm downloads](https://img.shields.io/npm/dt/youtube-playlist-markdown-cli.svg)
 
 Youtube Playlist Markdown CLI
 
