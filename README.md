@@ -9,7 +9,7 @@ Youtube Playlist Markdown CLI
 
 * node 8.x.x
 
-### Usage via CLI
+### Install
 
 
 ```sh
@@ -34,7 +34,7 @@ set GOOGLE_API_KEY=="========== YOUR GOOGLE API KEY =========="
 
 [How To Edit System Environment Variables In Windows 10 - YouTube](https://www.youtube.com/watch?v=C-U9SGaNbwY)
 
-#### command mode
+### Usage via command mode
 
 ![](assets/cli.png)
 
@@ -45,7 +45,7 @@ ym -p PLrG78JjvL7hWqX2FW54Ck8UP45fbWQXcu
 ym -o PLrG78JjvL7hWqX2FW54Ck8UP45fbWQXcu
 ```
 
-#### reactive mode
+### Usage via reactive mode
 
 ![](assets/reactive.png)
 
