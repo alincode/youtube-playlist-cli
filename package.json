@@ -43,6 +43,7 @@
     "commander": "^2.15.1",
     "figlet": "^1.2.0",
     "inquirer": "^5.2.0",
-    "youtube-playlist-markdown": "^1.0.0"
+    "youtube-playlist-markdown": "^1.4.1",
+    "youtube-playlist-summary": "^2.0.1"
   }
 }

@@ -10,14 +10,14 @@ const log = console.log;
 
 const ASK_API_KEY = {
   type: 'input',
-  name: 'GOOOGLE_API_KEY',
+  name: 'GOOGLE_API_KEY',
   message: "What's your Google API key?",
   default: function () {
-    return process.env.GOOOGLE_API_KEY;
+    return process.env.GOOGLE_API_KEY;
   },
   validate: function (value) {
-    if (process.env.GOOOGLE_API_KEY) return true;
-    var pass = value.length >= 39;
+    if (process.env.GOOGLE_API_KEY) return true;
+    var pass = value.length >= 20;
     if (pass) {
       return true;
     }
@@ -37,7 +37,7 @@ const ASK_PLAYLIST_ID = {
   name: 'PLAYLIST_ID',
   message: "Input the Youtube playlist ID?",
   validate: function (value) {
-    var pass = value.length >= 34;
+    var pass = value.length >= 18;
     if (pass) return true;
     return 'Please enter a valid Youtube playlist ID.';
   }
@@ -72,8 +72,8 @@ function displayWelcomeMessage() {
 
 async function main() {
   displayWelcomeMessage();
-  const { GOOOGLE_API_KEY } = await inquirer.prompt(ASK_API_KEY);
-  const config = { GOOOGLE_API_KEY };
+  const { GOOGLE_API_KEY } = await inquirer.prompt(ASK_API_KEY);
+  const config = { GOOGLE_API_KEY };
   const { typeText } = await inquirer.prompt(ASK_TYPE);
   const type = getType(typeText);
   const youtubePlaylistMarkdown = new YoutubePlaylistMarkdown(config);
