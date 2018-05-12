@@ -45,6 +45,8 @@ ym -p PLrG78JjvL7hWqX2FW54Ck8UP45fbWQXcu
 ym -o PLrG78JjvL7hWqX2FW54Ck8UP45fbWQXcu
 ```
 
+![](assets/example.png)
+
 ### Usage via reactive mode
 
 ![](assets/reactive.png)
