@@ -58,6 +58,12 @@ ym -o PLrG78JjvL7hWqX2FW54Ck8UP45fbWQXcu
 ymr
 ``
 
+### Dev
+
+```
+node cli.js -o "UCsvqVGtbbyHaMoevxPAq9Fg"
+```
+
 ## Relevant Projects
 
 * [youtube-playlist-summary](https://github.com/alincode/youtube-playlist-summary)
