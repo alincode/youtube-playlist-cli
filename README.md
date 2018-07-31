@@ -45,7 +45,8 @@ set GOOGLE_API_KEY=="========== YOUR GOOGLE API KEY =========="
 ym
 ym -c UCJi9ZAuo99MqMuJUXiJjpsA
 ym -p PLrG78JjvL7hWqX2FW54Ck8UP45fbWQXcu
-ym -o PLrG78JjvL7hWqX2FW54Ck8UP45fbWQXcu
+ym -C UCJi9ZAuo99MqMuJUXiJjpsA
+ym -P PLrG78JjvL7hWqX2FW54Ck8UP45fbWQXcu
 ```
 
 ![](assets/example.png)
