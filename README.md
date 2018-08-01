@@ -43,9 +43,11 @@ set GOOGLE_API_KEY=="========== YOUR GOOGLE API KEY =========="
 
 ```
 ym
+
 ym -c UCJi9ZAuo99MqMuJUXiJjpsA
-ym -p PLrG78JjvL7hWqX2FW54Ck8UP45fbWQXcu
 ym -C UCJi9ZAuo99MqMuJUXiJjpsA
+
+ym -p PLrG78JjvL7hWqX2FW54Ck8UP45fbWQXcu
 ym -P PLrG78JjvL7hWqX2FW54Ck8UP45fbWQXcu
 ```
 
@@ -62,7 +64,7 @@ ymr
 ### Dev
 
 ```
-node cli.js -o "UCsvqVGtbbyHaMoevxPAq9Fg"
+node cli.js -p "UCsvqVGtbbyHaMoevxPAq9Fg"
 ```
 
 ## Relevant Projects
