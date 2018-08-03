@@ -69,5 +69,5 @@ if (program.outputChannel) {
       failureMessage(error);
     });
 } else {
-  successfulMessage('do nothing.')
+  // successfulMessage('do nothing.')
 }
