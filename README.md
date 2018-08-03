@@ -2,8 +2,9 @@
 
 ```
 
-Youtube Playlist Markdown CLI is will outdated soon, it rename to be Youtube Playlist CLI.
+Youtube Playlist Markdown is will outdated soon, it will rename be Youtube Playlist CLI.
 
+npm install -g youtube-playlist-cli
 ```
 
 ![GitHub package version](https://img.shields.io/github/package-json/v/alincode/youtube-playlist-markdown-cli.svg)
