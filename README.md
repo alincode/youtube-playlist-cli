@@ -1,5 +1,11 @@
 # Youtube Playlist Markdown CLI
 
+```
+
+Youtube Playlist Markdown CLI is will outdated soon, it rename to be Youtube Playlist CLI.
+
+```
+
 ![GitHub package version](https://img.shields.io/github/package-json/v/alincode/youtube-playlist-markdown-cli.svg)
 ![node version](https://img.shields.io/node/v/youtube-playlist-markdown-cli.svg)
 ![npm downloads](https://img.shields.io/npm/dt/youtube-playlist-markdown-cli.svg)

@@ -29,7 +29,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alincode/youtube-playlist-markdown-cli.git"
+    "url": "git+https://github.com/alincode/youtube-playlist-cli.git"
   },
   "bugs": {
     "url": "https://github.com/alincode/youtube-playlist-markdown-cli/issues"
