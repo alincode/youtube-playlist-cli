@@ -18,7 +18,7 @@ function failureMessage(error) {
 }
 
 program
-  .name('ym')
+  .name('yp')
   .description('This is Youtube playlist CLI created by ' + chalk.yellow('alincode'))
   .version('0.0.1')
   .option('-c, --channel <channel_id>', 'generate all playlists')
