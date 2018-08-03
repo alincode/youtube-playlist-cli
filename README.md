@@ -1,19 +1,12 @@
-# Youtube Playlist Markdown CLI
+# Youtube Playlist CLI
 
-```
-
-Youtube Playlist Markdown is will outdated soon, it will rename be Youtube Playlist CLI.
-
-npm install -g youtube-playlist-cli
-```
-
-![GitHub package version](https://img.shields.io/github/package-json/v/alincode/youtube-playlist-markdown-cli.svg)
-![node version](https://img.shields.io/node/v/youtube-playlist-markdown-cli.svg)
-![npm downloads](https://img.shields.io/npm/dt/youtube-playlist-markdown-cli.svg)
-[![Dependency Status](https://img.shields.io/david/alincode/youtube-playlist-markdown-cli.svg?style=flat)](https://david-dm.org/alincode/youtube-playlist-markdown-cli)
+![GitHub package version](https://img.shields.io/github/package-json/v/alincode/youtube-playlist-cli.svg)
+![node version](https://img.shields.io/node/v/youtube-playlist-cli.svg)
+![npm downloads](https://img.shields.io/npm/dt/youtube-playlist-cli.svg)
+[![Dependency Status](https://img.shields.io/david/alincode/youtube-playlist-cli.svg?style=flat)](https://david-dm.org/alincode/youtube-playlist-markdown-cli)
 
 
-Youtube Playlist Markdown CLI
+Youtube Playlist CLI
 
 ### Requirements
 
@@ -23,7 +16,7 @@ Youtube Playlist Markdown CLI
 
 
 ```sh
-npm install -g youtube-playlist-markdown-cli
+npm install -g youtube-playlist-cli
 ```
 
 #### set your google api key
@@ -49,13 +42,13 @@ set GOOGLE_API_KEY=="========== YOUR GOOGLE API KEY =========="
 ![](assets/cli.png)
 
 ```
-ym
+yp
 
-ym -c UCJi9ZAuo99MqMuJUXiJjpsA
-ym -C UCJi9ZAuo99MqMuJUXiJjpsA
+yp -c UCJi9ZAuo99MqMuJUXiJjpsA
+yp -C UCJi9ZAuo99MqMuJUXiJjpsA
 
-ym -p PLrG78JjvL7hWqX2FW54Ck8UP45fbWQXcu
-ym -P PLrG78JjvL7hWqX2FW54Ck8UP45fbWQXcu
+yp -p PLrG78JjvL7hWqX2FW54Ck8UP45fbWQXcu
+yp -P PLrG78JjvL7hWqX2FW54Ck8UP45fbWQXcu
 ```
 
 ![](assets/example.png)
@@ -65,7 +58,7 @@ ym -P PLrG78JjvL7hWqX2FW54Ck8UP45fbWQXcu
 ![](assets/reactive.png)
 
 ``
-ymr
+ypr
 ``
 
 ### Dev
@@ -81,4 +74,4 @@ node cli.js -p "UCsvqVGtbbyHaMoevxPAq9Fg"
 
 ## License
 
-MIT © [alincode](https://github.com/alincode/youtube-playlist-markdown-cli)
+MIT © [alincode](https://github.com/alincode/youtube-playlist-cli)
