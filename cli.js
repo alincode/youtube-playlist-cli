@@ -6,6 +6,11 @@ const figlet = require('figlet');
 const YoutubePlaylistMarkdown = require('youtube-playlist-markdown');
 const display = require('./display');
 const jsonFormat = require('./jsonFormat');
+const download = require('./download');
+
+function highlightMessage(text) {
+  console.log(chalk.red(text));
+}
 
 function successfulMessage(text) {
   console.log(chalk.blue(text));
@@ -26,6 +31,7 @@ program
   .option('-p, --playlist <playlist_id>', 'generate a playlist')
   .option('-P, --output-playlist <playlist_id>', 'output the a playlist')
   .option('-j, --json <playlist_id>', 'generate json a playlist')
+  .option('-d, --download <playlist_id>', 'download playlist')
   .parse(process.argv);
 
 let config = {
@@ -33,6 +39,7 @@ let config = {
 };
 
 const youtubePlaylistMarkdown = new YoutubePlaylistMarkdown(config);
+// console.log('program:\n', program);
 console.log('\n');
 
 if (program.json){
@@ -41,6 +48,9 @@ if (program.json){
       successfulMessage('Generate json is done.')
     })
     .catch((error) => { failureMessage(error); });
+} else if (program.download) {
+  highlightMessage('Please wait a few minutes, it will started download soon.\n');
+  download.playlistItem(`https://www.youtube.com/playlist?list=${program.download}`);
 } else if (program.outputChannel) {
   display.playlist(config, program.outputChannel).catch((error) => { failureMessage(error); });
 } else if (program.outputPlaylist) {

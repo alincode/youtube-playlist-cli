@@ -64,6 +64,12 @@ yp -j PLrG78JjvL7hWqX2FW54Ck8UP45fbWQXcu
 
 ![](assets/example2.png)
 
+```
+yp -d PL16WqdAj66SCOdL6XIFbke-XQg2GW_Avg
+```
+
+![](assets/example3.png)
+
 ### Usage via reactive mode
 
 ![](assets/reactive.png)

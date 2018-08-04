@@ -44,6 +44,8 @@
     "figlet": "^1.2.0",
     "inquirer": "^5.2.0",
     "jsonfile": "^4.0.0",
+    "progress": "^2.0.0",
+    "youtube-dl": "^1.12.2",
     "youtube-playlist-markdown": "1.4.5",
     "youtube-playlist-summary": "2.0.1"
   }
