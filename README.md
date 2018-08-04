@@ -8,8 +8,9 @@
 ### Feature
 
 * It could help you quickly review playlist items information
-* It could help you quickly generate markdown file.
-* It could help you quickly generate json file.
+* It could help you quickly generate **markdown** file.
+* It could help you quickly generate **json** file.
+* It could help you quickly **download** the videos.
 
 ### Requirements
 
