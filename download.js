@@ -16,7 +16,7 @@ exports.playlistItem = async function playlist(url) {
   video.on('info', function (info) {
     size = info.size;
     filename = info._filename;
-    let output = path.join(__dirname + '/', info._filename);
+    let output = path.join('~/Downloads', info._filename);
     console.log(output);
     console.log(`${info._filename}`)
     video.pipe(fs.createWriteStream(output));
