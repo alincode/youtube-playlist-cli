@@ -3,6 +3,9 @@ const fs = require('fs');
 const ytdl = require('youtube-dl');
 const ProgressBar = require('progress');
 
+let folder = process.env.DOWNLOAD_FOLDER + '/';
+console.log(`Download folder : ${folder}`);
+
 exports.playlistItem = async function playlist(url) {
   let video = ytdl(url);
 
@@ -16,9 +19,7 @@ exports.playlistItem = async function playlist(url) {
   video.on('info', function (info) {
     size = info.size;
     filename = info._filename;
-    let folder = process.env.DOWNLOAD_FOLDER + '/';
     let output = path.join(folder, info._filename);
-    console.log(output);
     console.log(`${info._filename}`)
     video.pipe(fs.createWriteStream(output));
   });
