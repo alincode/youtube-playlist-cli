@@ -5,15 +5,17 @@
 ![npm downloads](https://img.shields.io/npm/dt/youtube-playlist-cli.svg)
 [![Dependency Status](https://img.shields.io/david/alincode/youtube-playlist-cli.svg?style=flat)](https://david-dm.org/alincode/youtube-playlist-markdown-cli)
 
+### Feature
 
-Youtube Playlist CLI
+* It could help you quickly review playlist items information
+* It could help you quickly generate markdown file.
+* It could help you quickly generate json file.
 
 ### Requirements
 
 * node 8.x.x
 
 ### Install
-
 
 ```sh
 npm install -g youtube-playlist-cli
@@ -48,10 +50,19 @@ yp -c UCJi9ZAuo99MqMuJUXiJjpsA
 yp -C UCJi9ZAuo99MqMuJUXiJjpsA
 
 yp -p PLrG78JjvL7hWqX2FW54Ck8UP45fbWQXcu
+```
+
+```
 yp -P PLrG78JjvL7hWqX2FW54Ck8UP45fbWQXcu
 ```
 
 ![](assets/example.png)
+
+```
+yp -j PLrG78JjvL7hWqX2FW54Ck8UP45fbWQXcu
+```
+
+![](assets/example2.png)
 
 ### Usage via reactive mode
 
@@ -64,7 +75,7 @@ ypr
 ### Dev
 
 ```
-node cli.js -p "UCsvqVGtbbyHaMoevxPAq9Fg"
+node cli.js -p "PLy_eQQ6VGZFwHULlf-jY3HycTqY25kHty"
 ```
 
 ## Relevant Projects

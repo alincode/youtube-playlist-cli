@@ -5,7 +5,7 @@ const chalk = require('chalk');
 const figlet = require('figlet');
 const inquirer = require('inquirer');
 const YoutubePlaylistMarkdown = require('youtube-playlist-markdown');
-const displayPlaylistItem = require('./displayPlaylistItem');
+const display = require('./display');
 const log = console.log;
 
 const ASK_API_KEY = {
@@ -81,7 +81,7 @@ async function main() {
   if(type == 1 || type == 2){
     let { PLAYLIST_ID } = await inquirer.prompt(ASK_PLAYLIST_ID);
     console.log('\n\n');
-    if (type == 1) await displayPlaylistItem(config, PLAYLIST_ID);
+    if (type == 1) await display.playlistItem(config, PLAYLIST_ID);
     if (type == 2) await youtubePlaylistMarkdown.generatorPlaylist(PLAYLIST_ID);
   } else {
     let { CHANNEL_ID } = await inquirer.prompt(ASK_CHANNEL_ID);
