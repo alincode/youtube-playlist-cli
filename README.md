@@ -35,7 +35,7 @@ then set up env
 export GOOGLE_API_KEY="========== YOUR GOOGLE API KEY =========="
 
 // for Windows
-set GOOGLE_API_KEY=="========== YOUR GOOGLE API KEY =========="
+set GOOGLE_API_KEY="========== YOUR GOOGLE API KEY =========="
 ```
 
 [How To Edit System Environment Variables In Windows 10 - YouTube](https://www.youtube.com/watch?v=C-U9SGaNbwY)
