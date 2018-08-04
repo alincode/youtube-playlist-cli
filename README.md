@@ -33,9 +33,11 @@ then set up env
 ```
 // for Mac
 export GOOGLE_API_KEY="========== YOUR GOOGLE API KEY =========="
+export DOWNLOAD_FOLDER="/Users/ailinliu/Downloads"
 
 // for Windows
 set GOOGLE_API_KEY="========== YOUR GOOGLE API KEY =========="
+set DOWNLOAD_FOLDER="C:\"
 ```
 
 [How To Edit System Environment Variables In Windows 10 - YouTube](https://www.youtube.com/watch?v=C-U9SGaNbwY)
