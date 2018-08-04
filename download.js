@@ -17,6 +17,7 @@ exports.playlistItem = async function playlist(url) {
     size = info.size;
     filename = info._filename;
     let output = path.join(__dirname + '/', info._filename);
+    console.log(output);
     console.log(`${info._filename}`)
     video.pipe(fs.createWriteStream(output));
   });
@@ -31,13 +32,9 @@ exports.playlistItem = async function playlist(url) {
 
   video.on('data', function data(chunk) {
     pos += chunk.length;
-    // `size` should not be 0 here.
     if (size) {
       var percent = (pos / size * 100).toFixed(2);
-      // process.stdout.cursorTo(0);
-      // process.stdout.clearLine(1);
       bar.update(percent / 100);
-      // process.stdout.write(percent + '%');
     }
   });
 
