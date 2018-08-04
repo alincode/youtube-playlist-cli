@@ -1,6 +1,6 @@
 {
   "name": "youtube-playlist-cli",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "Youtube Playlist CLI",
   "main": "cli.js",
   "scripts": {
