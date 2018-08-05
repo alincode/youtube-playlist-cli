@@ -3,7 +3,7 @@
 ![GitHub package version](https://img.shields.io/github/package-json/v/alincode/youtube-playlist-cli.svg)
 ![node version](https://img.shields.io/node/v/youtube-playlist-cli.svg)
 ![npm downloads](https://img.shields.io/npm/dt/youtube-playlist-cli.svg)
-[![Dependency Status](https://img.shields.io/david/alincode/youtube-playlist-cli.svg?style=flat)](https://david-dm.org/alincode/youtube-playlist-markdown-cli)
+[![Dependency Status](https://img.shields.io/david/alincode/youtube-playlist-cli.svg?style=flat)](https://david-dm.org/alincode/youtube-playlist-markdown-cli) [![Greenkeeper badge](https://badges.greenkeeper.io/alincode/youtube-playlist-cli.svg)](https://greenkeeper.io/)
 
 ### Feature
 
