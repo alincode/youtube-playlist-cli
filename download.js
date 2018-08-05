@@ -4,7 +4,6 @@ const ytdl = require('youtube-dl');
 const ProgressBar = require('progress');
 
 let folder = process.env.DOWNLOAD_FOLDER + '/';
-console.log(`Download folder : ${folder}`);
 
 exports.playlistItem = async function playlist(url) {
   let video = ytdl(url);

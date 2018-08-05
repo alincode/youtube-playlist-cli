@@ -49,6 +49,8 @@ if (program.json){
     })
     .catch((error) => { failureMessage(error); });
 } else if (program.download) {
+  let folder = process.env.DOWNLOAD_FOLDER + '/';
+  console.log(`Download folder at ${folder}`);
   highlightMessage('Please wait a few minutes, it will started download soon.\n');
   download.playlistItem(`https://www.youtube.com/playlist?list=${program.download}`);
 } else if (program.outputChannel) {
