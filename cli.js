@@ -3,24 +3,10 @@ const debug = require('debug')('ym');
 const program = require('commander');
 const chalk = require('chalk');
 const figlet = require('figlet');
-const YoutubePlaylistMarkdown = require('youtube-playlist-markdown');
 const display = require('./display');
 const jsonFormat = require('./jsonFormat');
 const download = require('./download');
-
-function highlightMessage(text) {
-  console.log(chalk.red(text));
-}
-
-function successfulMessage(text) {
-  console.log(chalk.blue(text));
-}
-
-function failureMessage(error) {
-  console.log('\n\n\n');
-  console.log(chalk.red(`It's failure, because ID is incorrect.`));
-  console.log(`more detail error message -> ${error.message}`);
-}
+const markdown = require('./markdown');
 
 program
   .name('yp')
@@ -38,38 +24,22 @@ let config = {
   GOOGLE_API_KEY: process.env.GOOGLE_API_KEY
 };
 
-const youtubePlaylistMarkdown = new YoutubePlaylistMarkdown(config);
 // console.log('program:\n', program);
 console.log('\n');
 
 if (program.json){
-  jsonFormat.playlistItem(config, program.json)
-    .then((result) => {
-      successfulMessage('Generate json is done.')
-    })
-    .catch((error) => { failureMessage(error); });
+  jsonFormat.playlistItem(config, program.json);
 } else if (program.download) {
-  let folder = process.env.DOWNLOAD_FOLDER + '/';
-  console.log(`Download folder at ${folder}`);
-  highlightMessage('Please wait a few minutes, it will started download soon.\n');
-  download.playlistItem(`https://www.youtube.com/playlist?list=${program.download}`);
+  download.init(program.download);
 } else if (program.outputChannel) {
-  display.playlist(config, program.outputChannel).catch((error) => { failureMessage(error); });
+  display.playlist(config, program.outputChannel);
 } else if (program.outputPlaylist) {
-  display.playlistItem(config, program.outputPlaylist).catch((error) => { failureMessage(error); });
+  display.playlistItem(config, program.outputPlaylist);
 } else if (program.channel) {
   config.CHANNEL_ID = program.channel;
-  youtubePlaylistMarkdown.generatorAll(program.channel)
-    .then((result) => {
-      successfulMessage('Generate all playlists is done.')
-    })
-    .catch((error) => { failureMessage(error); });
+  markdown.generatorAll(program.channel);
 } else if (program.playlist) {
-  youtubePlaylistMarkdown.generatorPlaylist(program.playlist)
-    .then((result) => {
-      successfulMessage('Generate a playlists is done.')
-    })
-    .catch((error) => { failureMessage(error); });
+  markdown.generatorPlaylist(program.playlist);
 } else {
   program.help();
 }

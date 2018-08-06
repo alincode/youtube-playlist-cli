@@ -4,8 +4,8 @@ const debug = require('debug')('ymr');
 const chalk = require('chalk');
 const figlet = require('figlet');
 const inquirer = require('inquirer');
-const YoutubePlaylistMarkdown = require('youtube-playlist-markdown');
 const display = require('./display');
+const markdown = require('./markdown');
 const log = console.log;
 
 const ASK_API_KEY = {
@@ -76,16 +76,15 @@ async function main() {
   const config = { GOOGLE_API_KEY };
   const { typeText } = await inquirer.prompt(ASK_TYPE);
   const type = getType(typeText);
-  const youtubePlaylistMarkdown = new YoutubePlaylistMarkdown(config);
 
   if(type == 1 || type == 2){
     let { PLAYLIST_ID } = await inquirer.prompt(ASK_PLAYLIST_ID);
     console.log('\n\n');
     if (type == 1) await display.playlistItem(config, PLAYLIST_ID);
-    if (type == 2) await youtubePlaylistMarkdown.generatorPlaylist(PLAYLIST_ID);
+    if (type == 2) await markdown.generatorPlaylist(PLAYLIST_ID);
   } else {
     let { CHANNEL_ID } = await inquirer.prompt(ASK_CHANNEL_ID);
-    await youtubePlaylistMarkdown.generatorAll(CHANNEL_ID);
+    await markdown.generatorAll(CHANNEL_ID);
   }
 }
 

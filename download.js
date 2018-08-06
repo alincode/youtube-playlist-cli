@@ -2,10 +2,17 @@ const path = require('path');
 const fs = require('fs');
 const ytdl = require('youtube-dl');
 const ProgressBar = require('progress');
+const msg = require('./msg');
 
 let folder = process.env.DOWNLOAD_FOLDER + '/';
 
-exports.playlistItem = async function playlist(url) {
+exports.init = async function init(channelId) {
+  console.log(`Download folder at ${folder}`);
+  msg.highlightMessage('Please wait a few minutes, it will started download soon.\n');
+  this.playlist(`https://www.youtube.com/playlist?list=${channelId}`);
+}
+
+exports.playlist = async function playlist(url) {
   let video = ytdl(url);
 
   video.on('error', function error(err) {

@@ -1,4 +1,5 @@
 const PlaylistSummary = require('youtube-playlist-summary');
+const msg = require('./msg');
 
 exports.playlistItem = async function (config, playlistId) {
   try {
@@ -9,6 +10,7 @@ exports.playlistItem = async function (config, playlistId) {
       console.log(`* ${item.title}`)
     });
   } catch (error) {
+    msg.failureMessage(error);
     throw error;
   }
 }
@@ -21,6 +23,7 @@ exports.playlist = async function (config, channelId) {
       console.log(`* ${item.title}`)
     });
   } catch (error) {
+    msg.failureMessage(error);
     throw error;
   }
 }
