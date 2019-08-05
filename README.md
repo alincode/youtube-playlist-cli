@@ -5,6 +5,8 @@
 ![npm downloads](https://img.shields.io/npm/dt/youtube-playlist-cli.svg)
 [![Dependency Status](https://img.shields.io/david/alincode/youtube-playlist-cli.svg?style=flat)](https://david-dm.org/alincode/youtube-playlist-markdown-cli)
 
+It is a Youtube CLI tool to help you do many things.
+
 ### Feature
 
 * It could help you quickly review playlist items information
@@ -26,7 +28,7 @@ npm install -g youtube-playlist-cli
 
 you need to get your API key, if you don't know how to do, maybe this video could help you.
 
-[How to Get YouTube API Key - Easy way - YouTube](https://www.youtube.com/watch?v=_U_VS12uu-o)
+[how to create YouTube API Key 2019 - YouTube](https://www.youtube.com/watch?v=3jZ5vnv-LZc)
 
 then set up env
 
