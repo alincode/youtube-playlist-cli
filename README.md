@@ -9,10 +9,10 @@ It is a Youtube CLI tool to help you do many things.
 
 ### Feature
 
+* It could help you quickly **download the videos**.
 * It could help you quickly review playlist items information
 * It could help you quickly generate **markdown** file.
 * It could help you quickly generate **json** file.
-* It could help you quickly **download** the videos.
 
 ### Requirements
 
@@ -74,6 +74,10 @@ yp -d PL16WqdAj66SCOdL6XIFbke-XQg2GW_Avg
 ```
 
 ![](assets/example3.png)
+
+```
+yp -D PL16WqdAj66SCOdL6XIFbke-XQg2GW_Avg
+```
 
 ### Usage via reactive mode
 
