@@ -39,14 +39,14 @@
     "node": ">= 8"
   },
   "dependencies": {
-    "chalk": "^2.4.1",
-    "commander": "^2.15.1",
-    "figlet": "^1.2.0",
-    "inquirer": "^6.0.0",
+    "chalk": "^2.4.2",
+    "commander": "^2.20.0",
+    "figlet": "^1.2.3",
+    "inquirer": "^6.5.0",
     "jsonfile": "^5.0.0",
-    "progress": "^2.0.0",
-    "youtube-dl": "^1.12.2",
-    "youtube-playlist-markdown": "1.4.5",
+    "progress": "^2.0.3",
+    "youtube-dl": "^2.0.0",
+    "youtube-playlist-markdown": "^1.4.7",
     "youtube-playlist-summary": "^2.1.0"
   }
 }
