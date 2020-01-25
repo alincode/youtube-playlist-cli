@@ -3,20 +3,20 @@
 ![GitHub package version](https://img.shields.io/github/package-json/v/alincode/youtube-playlist-cli.svg)
 ![node version](https://img.shields.io/node/v/youtube-playlist-cli.svg)
 ![npm downloads](https://img.shields.io/npm/dt/youtube-playlist-cli.svg)
-[![Dependency Status](https://img.shields.io/david/alincode/youtube-playlist-cli.svg?style=flat)](https://david-dm.org/alincode/youtube-playlist-markdown-cli)
+[![Dependency Status](https://img.shields.io/david/alincode/youtube-playlist-cli.svg?style=flat)](https://david-dm.org/alincode/youtube-playlist-cli)
 
 It is a Youtube CLI tool to help you do many things.
 
 ### Feature
 
-* It could help you quickly **download the videos**.
-* It could help you quickly review playlist items information
-* It could help you quickly generate **markdown** file.
-* It could help you quickly generate **json** file.
+- It could help you quickly **download the videos**.
+- It could help you quickly review playlist items information
+- It could help you quickly generate **markdown** file.
+- It could help you quickly generate **json** file.
 
 ### Requirements
 
-* node 8.x.x
+- node 8.x.x
 
 ### Install
 
@@ -83,9 +83,7 @@ yp -D PL16WqdAj66SCOdL6XIFbke-XQg2GW_Avg
 
 ![](assets/reactive.png)
 
-``
-ypr
-``
+`ypr`
 
 ### Dev
 
@@ -95,8 +93,8 @@ node cli.js -p "PLy_eQQ6VGZFwHULlf-jY3HycTqY25kHty"
 
 ## Relevant Projects
 
-* [youtube-playlist-summary](https://github.com/alincode/youtube-playlist-summary)
-* [youtube-playlist-markdown](https://github.com/alincode/youtube-playlist-markdown)
+- [youtube-playlist-summary](https://github.com/alincode/youtube-playlist-summary)
+- [youtube-playlist-markdown](https://github.com/alincode/youtube-playlist-markdown)
 
 ## License
 
