@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const debug = require('debug')('ym')
-const program = require('commander')
+const { program } = require('commander')
 const chalk = require('chalk')
 const display = require('./lib/display')
 const jsonFormat = require('./lib/jsonFormat')
@@ -20,30 +20,32 @@ program
   .option('-j, --json <playlist_id>', 'generate json a playlist')
   .option('-d, --download-playlist <playlist_id>', 'download playlist')
   .option('-D, --download-video <video_id>', 'download video')
-  .parse(process.argv)
+
+program.parse(process.argv)
+const options = program.opts()
 
 let config = {
   GOOGLE_API_KEY: process.env.GOOGLE_API_KEY,
 }
 
-// console.log('program:\n', program);
+// console.log('options:\n', options)
 console.log('\n')
 
-if (program.json) {
-  jsonFormat.playlistItem(config, program.json)
-} else if (program.downloadPlaylist) {
-  download.playlist(program.downloadPlaylist)
-} else if (program.downloadVideo) {
-  download.video(program.downloadVideo)
-} else if (program.outputChannel) {
-  display.playlist(config, program.outputChannel)
-} else if (program.outputPlaylist) {
-  display.playlistItem(config, program.outputPlaylist)
-} else if (program.channel) {
-  config.CHANNEL_ID = program.channel
-  markdown.generatorAll(program.channel)
-} else if (program.playlist) {
-  markdown.generatorPlaylist(program.playlist)
+if (options.json) {
+  jsonFormat.playlistItem(config, options.json)
+} else if (options.downloadPlaylist) {
+  download.playlist(options.downloadPlaylist)
+} else if (options.downloadVideo) {
+  download.video(options.downloadVideo)
+} else if (options.outputChannel) {
+  display.playlist(config, options.outputChannel)
+} else if (options.outputPlaylist) {
+  display.playlistItem(config, options.outputPlaylist)
+} else if (options.channel) {
+  config.CHANNEL_ID = options.channel
+  markdown.generatorAll(options.channel)
+} else if (options.playlist) {
+  markdown.generatorPlaylist(options.playlist)
 } else {
-  program.help()
+  options.help()
 }
