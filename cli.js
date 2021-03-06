@@ -2,7 +2,6 @@
 const debug = require('debug')('ym')
 const program = require('commander')
 const chalk = require('chalk')
-const figlet = require('figlet')
 const display = require('./lib/display')
 const jsonFormat = require('./lib/jsonFormat')
 const download = require('./lib/download')
